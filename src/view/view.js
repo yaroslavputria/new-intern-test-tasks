@@ -11,7 +11,6 @@ define(function () {
     console.log('Render');
 
     var form = document.createElement('form');
-    utForName.type = 'text';
     form.innerHTML = `
     <label> lang:<br>
     <select name="lang" id="lang">
