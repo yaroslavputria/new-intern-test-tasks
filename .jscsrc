@@ -75,7 +75,6 @@
     "requireShorthandArrowFunctions": true,
     "requireSpacesInsideImportedObjectBraces": true,
     "safeContextKeyword": "_this",
-    "validateLineBreaks": "CRLF",
     "validateQuoteMarks": { "mark": "'", "escape": true, "ignoreJSX": true },
     "validateIndentation": 2,
     "maximumLineLength": {
