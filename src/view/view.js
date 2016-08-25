@@ -12,11 +12,15 @@ define(function () {
 
     var form = document.createElement('form');
     form.innerHTML = `
+     <label> user name:<br>
+    <input type = "text" id="userName">
+    </label><br>
     <label> lang:<br>
     <select name="lang" id="lang">
     <option value="JSON">JSON</option> 
     <option value="JavaScript">JavaScript</option>
     <option value="Text">Text</option>
+    <option value="Markdown">Markdown</option>
     </select>
     </label><br>
     <label> type:<br>
@@ -26,16 +30,14 @@ define(function () {
     <option value="text/plain">text/plain</option>
     </select>
     </label><br>
-    <label> user name:<br>
-    <input type = "text" id="userName">
-    </label><br>
+   
     <button type="button" id="sendRequest">Send</button>`;
     document.body.appendChild(form);
   };
 
   View.prototype.tmpAppendListOfName = function (list) {
     var ul = document.createElement('ul');
-    ul.textContent = 'File(s) with chosen criteria:';
+    ul.id = 'listOfFiles';
     list.map(function (item) {
       var tmpLi = document.createElement('li');
       tmpLi.textContent = item;
