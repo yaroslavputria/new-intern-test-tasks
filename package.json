@@ -1,0 +1,24 @@
+{
+  "name": "intern-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "start": "http-server -p 8080",
+    "jshint": "jshint src",
+    "jscs": "jscs src"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^0.9.0",
+    "jscs": "^3.0.7",
+    "jshint": "^2.9.2",
+    "open": "0.0.5"
+  },
+  "dependencies": {
+    "chai": "^3.5.0",
+    "es6-promise": "^3.2.1",
+    "isomorphic-fetch": "^2.2.1"
+  }
+}
