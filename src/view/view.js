@@ -33,5 +33,17 @@ define(function () {
     document.body.appendChild(form);
   };
 
+  View.prototype.tmpAppendListOfName = function (list) {
+    var ul = document.createElement('ul');
+    ul.textContent = 'File(s) with chosen criteria:';
+    list.map(function (item) {
+      var tmpLi = document.createElement('li');
+      tmpLi.textContent = item;
+      ul.appendChild(tmpLi);
+    });
+
+    document.body.appendChild(ul);
+  };
+
   return View;
 });

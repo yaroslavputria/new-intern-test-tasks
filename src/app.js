@@ -15,7 +15,8 @@ SystemJS.import('src/model/model.js').then(function (Model) {
     */
     view.render(model);
     var sendReq = document.getElementById('sendRequest');
-    sendReq.addEventListener('click', function () {
+    sendReq.addEventListener('click', function (e) {
+      e.preventDefault();
       var userName = document.getElementById('userName');
       var type = document.getElementById('type');
       var lang = document.getElementById('lang');
@@ -25,21 +26,9 @@ SystemJS.import('src/model/model.js').then(function (Model) {
         var filteredGists = model.filterFiles(gists, type.value, lang.value);
         var fileNames = model.filterByName(filteredGists);
         console.log(fileNames);
-        tmpAppendListOfName(fileNames);
+        view.tmpAppendListOfName(fileNames);
       });
     });
-
-    function tmpAppendListOfName(list) {
-      var ul = document.createElement('ul');
-      ul.textContent = 'File(s) with chosen criteria:';
-      list.map(function (item) {
-        var tmpLi = document.createElement('li');
-        tmpLi.textContent = item;
-        ul.appendChild(tmpLi);
-      });
-
-      document.body.appendChild(ul);
-    }
 
   });
 
