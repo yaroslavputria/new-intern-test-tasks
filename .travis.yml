@@ -4,3 +4,5 @@ node_js:
 before_script:
   - npm run jshint
   - npm run jscs
+  - npm run pre
+  - npm run wdio
