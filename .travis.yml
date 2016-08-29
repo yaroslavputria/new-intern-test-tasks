@@ -8,4 +8,5 @@ before_script:
   - unzip BrowserStackLocal-linux-x64.zip
   - ./BrowserStackLocal -v -onlyAutomate -forcelocal $BROWSERSTACK_ACCESS_KEY &
   - sleep 3
+  - npm run start
   - npm run wdio
