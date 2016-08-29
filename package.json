@@ -7,6 +7,7 @@
     "start": "http-server -p 8080",
     "jshint": "jshint src",
     "jscs": "jscs src",
+    "test-mocha": "mocha",
     "wdio": "node_modules/.bin/wdio wdio.conf.js"
   },
   "author": "",
@@ -20,8 +21,10 @@
     "mocha": "^3.0.2",
     "open": "0.0.5",
     "requirejs": "^2.2.0",
+    "selenium-standalone": "^5.6.1",
     "systemjs": "^0.19.37",
     "wdio-mocha-framework": "^0.4.0",
+    "wdio-selenium-standalone-service": "0.0.6",
     "wdio-spec-reporter": "0.0.3",
     "webdriverio": "^4.2.8"
   },

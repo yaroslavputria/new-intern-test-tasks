@@ -24,6 +24,7 @@ exports.config = {
         browserName: 'chrome'
     }],
 
+    services: ['selenium-standalone'],
     /**
      * test configurations
      */
