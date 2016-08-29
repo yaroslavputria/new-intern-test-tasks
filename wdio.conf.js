@@ -21,10 +21,9 @@ exports.config = {
      * capabilities
      */
     capabilities: [{
-        browserName: 'chrome'
+        browserName: 'firefox'
     }],
 
-    services: ['selenium-standalone'],
     /**
      * test configurations
      */
