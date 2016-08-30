@@ -3,7 +3,7 @@ exports.config = {
     /**
      * server configurations
      */
-    host: '127.0.0.1',
+    host: 'localhost',
     port: 4444,
 
     /**
@@ -17,18 +17,19 @@ exports.config = {
     //     'test/spec/mobile/**'
     // ],
 
-    services: ['selenium-standalone'],
-    
+ //   services: ['selenium-standalone'],
+
     /**
      * capabilities
      */
     capabilities: [{
-        browserName: 'firefox'
+        browserName: 'phantomjs'
     }],
-
+    services: ['phantomjs'],
     /**
      * test configurations
      */
+    sync: true,
     logLevel: 'silent',
     coloredLogs: true,
     screenshotPath: 'shots',
