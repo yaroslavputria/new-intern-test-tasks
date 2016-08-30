@@ -29,7 +29,7 @@ exports.config = {
     /**
      * test configurations
      */
-    sync: true,
+    sync: false,
     logLevel: 'silent',
     coloredLogs: true,
     screenshotPath: 'shots',
