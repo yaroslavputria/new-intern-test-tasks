@@ -17,6 +17,8 @@ exports.config = {
     //     'test/spec/mobile/**'
     // ],
 
+    services: ['selenium-standalone'],
+    
     /**
      * capabilities
      */
