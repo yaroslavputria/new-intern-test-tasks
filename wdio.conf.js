@@ -17,18 +17,11 @@ exports.config = {
     //     'test/spec/mobile/**'
     // ],
 
- //   services: ['selenium-standalone'],
-    customLaunchers: {
-        ChromeTravis: {
-            base: 'Chrome',
-            flags: ['--no-sandbox']
-        }
-    },
     /**
      * capabilities
      */
     capabilities: [{
-        browserName: 'ChromeTravis'
+        browserName: 'firefox'
     }],
    // services: ['phantomjs'],
     /**
