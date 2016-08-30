@@ -18,12 +18,17 @@ exports.config = {
     // ],
 
  //   services: ['selenium-standalone'],
-
+    customLaunchers: {
+        ChromeTravis: {
+            base: 'Chrome',
+            flags: ['--no-sandbox']
+        }
+    },
     /**
      * capabilities
      */
     capabilities: [{
-        browserName: 'chrome'
+        browserName: 'ChromeTravis'
     }],
    // services: ['phantomjs'],
     /**
