@@ -22,22 +22,16 @@ exports.config = {
      */
     capabilities: [{
         browserName: 'chrome'
-    },
-    {
-        browserName: 'phantomjs'
-    },
-    {
-        browserName: 'firefox'
     }],
-    services: ['phantomjs'],
+    //services: ['phantomjs'],
     /**
      * test configurations
      */
-    sync: false,
+    sync: true,
     logLevel: 'silent',
     coloredLogs: true,
     screenshotPath: 'shots',
-    waitforTimeout: 10000,
+    waitforTimeout: 15000,
     framework: 'mocha',
 
     reporters: ['spec'],
